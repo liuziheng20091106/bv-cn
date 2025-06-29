@@ -41,7 +41,6 @@ class MainActivity : ComponentActivity() {
             val isChecking by remember {
                 derivedStateOf { isCheckingNetwork || isCheckingUserLock }
             }
-            var isMainlandChina by remember { mutableStateOf(false) }
             var userLockLocked by remember { mutableStateOf(false) }
 
             LaunchedEffect(Unit) {
